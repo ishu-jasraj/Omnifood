@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+  line-height: 1;
+  color: #555;
+  font-weight: 400;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-color: #fdf2e9;
+  padding: 4.8rem 8.6rem;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 9.6rem;
+  align-items: center;
+}
+/* HEADINGS */
+.heading-primary,
+.heading-secondary,
+.heading-tertiary,
+.heading-quad {
+  color: #333;
+  /* color: #343a40; */
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+.heading-primary {
+  font-size: 4.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 3.8rem;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 2.6rem;
+  margin-bottom: 3.2rem;
+}
+.heading-quad {
+  font-size: 2rem;
+}
+.hero-description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 52px;
+}
+.hero-img {
+  width: 100%;
+}
+.hero-btn:link,
+.hero-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: #e67e22;
+  color: white;
+  padding: 1.6rem 3.2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 1s;
+}
+
+.one:hover,
+.one:active {
+  background-color: #cf711f;
+}
+
+.two:link,
+.two:visited {
+  background-color: white;
+  color: #555;
+}
+
+.two:hover,
+.two:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px white;
+}
+
+.delivered-meals {
+  display: flex;
+  gap: 1.5rem;
+  align-content: center;
+}
+.delivered-customers {
+  display: flex;
+}
+.delivered-customers img {
+  height: 4.6rem;
+  width: 4.6rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+.delivered-customers img:last-child {
+  margin: 0;
+}
+.delivered-text {
+  font-weight: 600;
+  font-size: 1.5rem;
+  align-self: center;
+}
+.customer-count {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/*HEADER SECTION*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /*TO MAKE HEADER STICKY*/
+  height: 4.6rem;
+  padding: 0 4.8rem;
+}
+
+/* NAVIGATION LIST */
+.main-nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  align-items: center;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  color: white !important;
+  background-color: #e67e22;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* HOW IT WORKS SECTION */
+.work-section {
+  /* background-color: orangered; */
+  padding: 9.6rem 0;
+}
+
+.sub-heading {
+  /*span is an inline element */
+  display: block;
+  font-size: 1.6rem;
+  color: #cf711f;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.6rem;
+}
+
+.sub-img {
+  width: 35%;
+}
+
+.step-number {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: rgba(85, 85, 85, 0.5);
+  margin-bottom: 1.2rem;
+}
+.sub-textbox-description {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.work-section-space {
+  gap: 7.6rem;
+}
+.sub-work-section {
+  column-gap: 6rem;
+  row-gap: 9.6rem;
+  /* align-items: center; */
+}
+.sub-textbox {
+  align-self: center;
+}
+.sub-img-box {
+  /* justify-self: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sub-img-box::before {
+  content: "";
+  display: block;
+  background-color: #fdf2e9;
+  width: 60%;
+  /* height: 60%; */
+  padding-bottom: 60%;
+  position: absolute;
+  /*
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  */
+  border-radius: 50%;
+  z-index: -2;
+}
+.sub-img-box::after {
+  content: "";
+  display: block;
+  background-color: #fae5d3;
+  width: 45%;
+  /* height: 60%; */
+  padding-bottom: 45%;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* FEATURED IN SECTION */
+.featured-section {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.featured-logo-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.heading-quad {
+  color: #888;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2.4rem;
+}
+
+.featured-logo {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+/* MEALS SECTION */
+.meals-section {
+  padding: 9.6rem 0;
+}
+.meal-cards {
+  column-gap: 3rem;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.meal:hover {
+  transform: translateY(-2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+}
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  text-transform: uppercase;
+  background-color: #51cf66;
+  color: #333;
+  border-radius: 100px;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+.meal-tags {
+  margin-bottom: 1.2px;
+  display: flex;
+  gap: 6px;
+}
+.vegan {
+  background-color: #a9e34b;
+}
+.paleo {
+  background-color: #ffd43b;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meal-image {
+  width: 100%;
+}
+
+.meal-attributes {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-icon {
+  color: #e67e22;
+  font-size: 2.4rem;
+}
+
+.meal-att {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 1.6rem;
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+/*  DIET FRIENDLY LIST ITEMS */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  color: #e67e22;
+  font-size: 3rem;
+}
+
+/* ALL RECEPIES LIST */
+
+.margin-bottom--md {
+  margin-bottom: 4.8rem !important;
+}
+.recepies-link:link,
+.recepies-link:visited {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #e67e22;
+  transition: all 0.3s;
+}
+.recepies-link:hover,
+.recepies-link:active {
+  color: #cf711f;
+}
