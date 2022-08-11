@@ -3,9 +3,15 @@ primary color : #e67e22
 background:#fdf2e9;
 #fae5d3
 shades:#cf711f
+#eb984e
+ #45260a;
 greys:
+#6f6f6f
 #555
 #bbb
+#333
+#777
+box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.5);
 
 letter-spacing: 1px -0.75px
 */
@@ -25,19 +31,67 @@ letter-spacing: 1px -0.75px
 }
 .grid {
   display: grid;
+  /* margin-bottom: 9.6rem; */
 }
 
+/* when grid is last child then margin bottom is 0 */
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .grid--col--2 {
   grid-template-columns: repeat(2, 1fr);
 }
 .grid--col--3 {
   grid-template-columns: repeat(3, 1fr);
 }
-
+.grid--col--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--col--5 {
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 3rem;
+}
 strong {
   font-weight: 500;
 }
 
 .center-text {
   text-align: center;
+}
+
+/*  DIET FRIENDLY LIST ITEMS */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  color: #e67e22;
+  font-size: 3rem;
+}
+.margin-bottom-md {
+  margin-bottom: 1.6rem;
+}
+
+.btn--form {
+  background-color: #45260a !important;
+  color: #fdf2e9 !important;
+  align-self: end;
+  padding: 1.2rem !important;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #e67d2290;
 }
